@@ -15,5 +15,5 @@ button:hover{
 .button{
     display: flex;
     justify-content: space-between;
-    width: 432px;
+    width: 656px;
 }

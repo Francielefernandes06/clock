@@ -1,20 +1,14 @@
-.container{
+.cronometro{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25%;
-    height: 185px;
-    gap: 25px;
-    
-}
-
-
-.clock {
-    display: flex;
     justify-content: center;
     
 
+
+}
+.display{
+    display: flex;
+    justify-content: center;
     color: var(--color-text);
     font-size: 60px;
     font-family: 'Orbitron';

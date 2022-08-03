@@ -1,0 +1,19 @@
+button{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Orbitron';
+}
+
+button:hover{
+    background-color: var(--color-text);
+    color: var(--color-primary);
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 432px;
+}

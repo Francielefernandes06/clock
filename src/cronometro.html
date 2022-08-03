@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/clock.css">
     <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/cronometro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
@@ -14,8 +15,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="cronometro">
-            12
+        <div class="cronometro" name="temp">
+            <div class="display">
+                <div class="reloj" id="Horas">00</div>
+                <div class="reloj" id="Minutos">:00</div>
+                <div class="reloj" id="Segundos">:00</div>
+                <div class="reloj" id="Centesimas">:00</div>
+            </div>
+            <div class="button">
+                <button type="button" class="boton" id="inicio" onclick="inicio()">Iniciar</button>
+            <button type="button" class="boton" id="parar" value="Stop" onclick="parar()">Parar</button>
+            <button type="button" class="boton" id="retornar" value="Resume" onclick="inicio();">Retornar</button>
+            <button type="button" class="boton" id="zerar" value="Reset" onclick="zerar()">Zerar</button>
+            </div>
+            
+
+            
         </div>
         <div class="button">
             <a href="index.html">

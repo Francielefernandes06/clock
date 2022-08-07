@@ -16,32 +16,38 @@
 </head>
 
 <body>
-
-<div id="timer">
-  <input id="minutos" type="number">
-  <input id="segundos" type="number">
-  <button onclick="play()">Play</button>
-  
-</div>
-
-<!-- <div class="controlls">
-      <div class="display-temporizador">
-        00:30
-
-      </div>
-      <button class="play" id="pause">Play</button>
+  <div class="container">
+    <div id="timer">
+      00:00
     </div>
-    <div class="setters">
-      <div class="minutos-set">
-        <button data-setter="minutos-plus" onclick="aumentarMinuto()">+</button>
-        <button data-setter="minutos-minus" onclick="">-</button>
-      </div>
-      <div class="segundos-set">
-        <button data-setter="segundos-plus" onclick="">+</button>
-        <button data-setter="segundos-minus" onclick="">-</button>
-      </div>
-</div> -->
+    <div class="input">
+      <input id="minutos" type="number" placeholder="Minutos">
+      <input id="segundos" type="number" placeholder="Segundos">
+    </div>
 
+
+    <div class="button">
+      <button onclick="play()">
+        Iniciar
+      </button>
+      <button onclick="">
+        Parar
+      </button>
+      <button onclick="">
+        Reiniciar
+      </button>
+
+    </div>
+    <div class="button">
+      <a href="index.html">
+          <button>Relógio</button>
+      </a>
+      <a href="cronometro.html">
+          <button>Cronometro</button>
+      </a>
+      
+  </div>
+  </div>
   <script src="temporizador.js"></script>
 </body>
 

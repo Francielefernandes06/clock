@@ -1,3 +1,19 @@
 #timer{
-  color: white;
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 60px;
+    font-family: 'Orbitron';
+    letter-spacing: 1rem;
+  
+}
+.input input{
+    background: black;
+    border: 1px solid white;
+    width: 210px;
+    height: 55px;
+    font-size: 32px;
+    font-family: 'Orbitron';
+    color: white;
+    text-align: center;
 }

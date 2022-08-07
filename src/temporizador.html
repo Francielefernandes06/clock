@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/temporizador.css">
-    <link rel="stylesheet" href="styles/clock.css">
-    <link rel="stylesheet" href="styles/button.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <title>Clock</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/temporizador.css">
+  <link rel="stylesheet" href="styles/clock.css">
+  <link rel="stylesheet" href="styles/button.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <title>Clock</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="temporizador">
-            <input type="time">
-            <div class="button">
-                <button>Iniciar</button>
-                <button>Parar</button>
-                <button>Reiniciar</button>
-            </div>
-        </div>
-        <div class="button">
-            <a href="cronometro.html">
-                <button>Cronometro</button>
-            </a>
-            <a href="index.html">
-                <button>Relógio</button>
-            </a>
-            
-        </div>
 
+<div id="timer">
+  <input id="minutos" type="number">
+  <input id="segundos" type="number">
+  <button onclick="play()">Play</button>
+  
+</div>
+
+<!-- <div class="controlls">
+      <div class="display-temporizador">
+        00:30
+
+      </div>
+      <button class="play" id="pause">Play</button>
     </div>
-    
+    <div class="setters">
+      <div class="minutos-set">
+        <button data-setter="minutos-plus" onclick="aumentarMinuto()">+</button>
+        <button data-setter="minutos-minus" onclick="">-</button>
+      </div>
+      <div class="segundos-set">
+        <button data-setter="segundos-plus" onclick="">+</button>
+        <button data-setter="segundos-minus" onclick="">-</button>
+      </div>
+</div> -->
 
-<script src="script.js"></script>
+  <script src="temporizador.js"></script>
 </body>
+
 </html>

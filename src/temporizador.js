@@ -17,8 +17,12 @@ function startTimer(duration, display) {
 
 function play() {
     var minutos = document.getElementById("minutos").value;
-    var duration = 60 * minutos;
+    var segundos = document.getElementById("segundos").value;
+    document.getElementById("minutos").value='';
+    document.getElementById("segundos").value='';
+    var duration = (60 * minutos) + (1 * segundos);
     display = document.querySelector('#timer');
 
     startTimer(duration, display);
 }
+ 
